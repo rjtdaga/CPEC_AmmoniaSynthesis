@@ -7,7 +7,7 @@ This repository is for the relevant files for the paper, "Kinetic study of Ammon
 
 # Algorithmic Details of the kMC code:
 The schematic flowchart of the accelerated kMC algorithm is shown in the figure below:
-
+![Image not available](Images/Picture1.svg)
 
 # Instructions for creating an input file
 
