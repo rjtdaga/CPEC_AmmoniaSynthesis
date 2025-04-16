@@ -6,6 +6,8 @@ This repository is for the relevant files for the paper, "Kinetic study of Ammon
 2) mpiexec compiler version: 1.8
 
 # Algorithmic Details of the kMC code:
+The schematic flowchart of the accelerated kMC algorithm is shown in the figure below:
+
 
 # Instructions for creating an input file
 
