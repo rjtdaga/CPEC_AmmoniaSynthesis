@@ -41,14 +41,14 @@ To clone this repository to your computer, use the following code:
 ```
 
 # Creating an Input file
-
+A single text input file is used to run the kMC simulation. Detailed information and the input files used for the manuscript is shown in the folder named "Input Files".
 
 # Running the Build file
-Folder xx already contains the compiled program with all the necessary files embedded into it. To run it on your system, use the following command
+Folder "Main Code" already contains the compiled program with all the necessary files embedded into it. To run it on your system, use the following command
 ```
 mpirun -np 5 ./KineticMC InputFile OutputFile
 ```
 where -np represents the number of processors to be used. Use 1 if only one process is to be run and increment it based on the parallel simulations to be run. KineticMC is the compiled program, InputFile is the path of input file and OutputFile is the of summarized output file to be created
 
 # Instructions for generating snapshots and creating simulation movies
-The kMC simulation will generate Coordinates<N>.xyz files where N is the rank of the process. This file contains the coordinates of all the atoms in the system after every kMC simulation step and can be used with any appropriate visualizer/movie maker. This repository includes a custom movie generator with the code written in MATLAB in folder xx. Folder xx contains the necessary details and instructions to make the snapshot or movie with the .xyz file provided.
+The kMC simulation will generate Coordinates<N>.xyz files where N is the rank of the process. This file contains the coordinates of all the atoms in the system after every kMC simulation step and can be used with any appropriate visualizer/movie maker. This repository includes a custom movie generator with the code written in MATLAB in folder "MATLAB Movie". Folder xx contains the necessary details and instructions to make the snapshot or movie with the .xyz file provided.
