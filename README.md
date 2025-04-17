@@ -2,8 +2,10 @@
 This repository is for the relevant files for performing and visualizing kinetic monte carlo simulations (kMC) presented in the paper, "Kinetic study of Ammonia synthesis on Ru (0001) using dynamic surface charge oscillations through programmable catalysis". While the provided input files run kMC simulations specifically for NH3 synthesis on Ru(0001) surface, the input files can be approapriately modified to extend it to different surface chemistries on different metals and different facets lying within the scope of the program.
 
 # Software Version used:
-1) gcc version: 4.4.7
-2) mpiexec compiler version: 1.6.2
+```
+GCC version: 4.4.7
+mpiexec compiler version: 1.6.2
+```
 
 # Algorithmic Details of the kMC code:
 The schematic flowchart of the accelerated kMC algorithm is shown in the figure below:
