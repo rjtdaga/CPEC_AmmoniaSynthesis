@@ -32,9 +32,21 @@ where $\Delta t_s$ is the time spent in the superbasin, $\Delta t_j$ is the time
 9) If the selected step is an unequilibrated step, rescale the scaling factor ($\alpha$) of all the slow steps specified by the user to 1.
 10) Update the system configuration from $\gamma$ to $\gamma$' and go to step 2. 
 
+# Cloning the Repository:
+To clone this repository to your computer, use the following code:
+```
+~$ git clone https://github.com/rjtdaga/CPEC_AmmoniaSynthesis.git CPEC_AmmoniaSynthesis
+```
 
-# Instructions for creating an input file
+# Creating an Input file
 
-# Instructions for running the kMC simulation
+
+# Running the Build file
+Folder xx already contains the compiled program with all the necessary files embedded into it. To run it on your system, use the following command
+```
+mpirun -np 5 ./KineticMC InputFile OutputFile
+```
+where -np represents the number of processors to be used. Use 1 if only one process is to be run and increment it based on the parallel simulations to be run. KineticMC is the compiled program, InputFile is the path of input file and OutputFile is the of summarized output file to be created
 
 # Instructions for generating snapshots and creating simulation movies
+The kMC simulation will generate Coordinates<N>.xyz files where N is the rank of the process. This file contains the coordinates of all the atoms in the system after every kMC simulation step and can be used with any appropriate visualizer/movie maker. This repository includes a custom movie generator with the code written in MATLAB in folder xx. Folder xx contains the necessary details and instructions to make the snapshot or movie with the .xyz file provided.
